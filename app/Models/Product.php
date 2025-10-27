@@ -8,4 +8,3 @@ class Product extends Model
 {
     //
 }
-echo "# LarevelService" >> README.md
