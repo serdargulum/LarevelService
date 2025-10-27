@@ -15,4 +15,5 @@ class ProductController extends Controller
     {
         return $this->productService->getAll();
     }
+
 }

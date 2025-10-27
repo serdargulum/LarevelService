@@ -15,6 +15,11 @@ class AppServiceProvider extends ServiceProvider
             \App\Services\IProductService::class,
             \App\Services\ProductService::class
         );
+
+        $this->app->bind(
+            \App\Services\ITestService::class,
+            \App\Services\TestService::class
+        );
     }
 
     /**

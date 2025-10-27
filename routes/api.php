@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\{ProductController, TestController};
 
 
 Route::get('/user', function (Request $request) {
@@ -10,3 +10,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('products', [ProductController::class, 'index']);
+
+Route::get('test/void', [TestController::class, 'void']);
+
+Route::get('test/calculation', [TestController::class, 'calculation']);
