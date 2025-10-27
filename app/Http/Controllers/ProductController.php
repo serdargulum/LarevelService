@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\IProductService;
+use Illuminate\Http\JsonResponse;
 
 class ProductController extends Controller
 {
@@ -11,9 +12,9 @@ class ProductController extends Controller
 
     }
 
-    public function index()
+    public function index(): JsonResponse
     {
-        return $this->productService->getAll();
+        return response()->json($this->productService->getAll());
     }
 
 }

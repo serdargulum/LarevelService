@@ -2,9 +2,7 @@
 
 namespace App\Services;
 
-use Illuminate\Database\Eloquent\Collection;
-
 interface ITestService
 {
-
+    public function heavyCalculation(int $count): int;
 }

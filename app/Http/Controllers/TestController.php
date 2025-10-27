@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\IProductService;
 use App\Services\ITestService;
+use Illuminate\Http\JsonResponse;
 
 class TestController extends Controller
 {
@@ -12,14 +12,16 @@ class TestController extends Controller
 
     }
 
-    public function void()
+    public function void(): JsonResponse
     {
-        return [];
+        return response()->json([]);
     }
 
-    public function calculation()
+    public function calculation(): JsonResponse
     {
-        return ['total' => $this->testService->heavyCalculation(1000000)];
+        return response()->json([
+            'total' => $this->testService->heavyCalculation(1000000)
+        ]);
     }
 
 }

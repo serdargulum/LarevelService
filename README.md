@@ -3,7 +3,7 @@
 This is a part of test project https://github.com/serdargulum/TestService
 
 
-## Deploy
+## Deploy
 
 LaravelService : http://127.0.0.1:8000
 ```
