@@ -9,6 +9,9 @@ class Product extends Model
 {
     use HasFactory;
 
+    // Important for servers that are case-sensitive
+    protected $table = 'Products';
+
     protected $primaryKey = 'Id';
 
     const CREATED_AT = 'CreatedAt';
