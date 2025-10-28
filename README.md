@@ -2,7 +2,7 @@
 
 This is a part of test project https://github.com/serdargulum/TestService
 
-## Populate Database
+## Create and Populate Database
 
 ```bash
 php artisan migrate   
